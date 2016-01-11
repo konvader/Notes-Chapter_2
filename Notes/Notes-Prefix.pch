@@ -1,0 +1,23 @@
+//
+//  Notes-Prefix.pch
+//  Notes
+//
+//  Created by Daniel Konrad on 21.12.15.
+//  Copyright © 2015 Daniel Konrad. All rights reserved.
+//
+
+#ifndef Notes_Prefix_pch
+#define Notes_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "BAAClient.h"
+#endif
+
+#endif /* Notes_Prefix_pch */
