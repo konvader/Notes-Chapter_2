@@ -69,7 +69,7 @@
     }
     
     Note *note = [[Note alloc] init];
-    note.noteHeader = [NSString stringWithFormat:@"Enter title %lu", (unsigned long)_notes.count];
+    note.noteTitle = [NSString stringWithFormat:@"Enter title %lu", (unsigned long)_notes.count];
     note.noteBody = @"Enter your note here";
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -128,7 +128,7 @@
     }
     
     Note *note = _notes[indexPath.row];
-    cell.textLabel.text = note.noteHeader;
+    cell.textLabel.text = note.noteTitle;
     cell.detailTextLabel.text = note.noteDate;
     
     return cell;

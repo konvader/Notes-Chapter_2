@@ -10,7 +10,7 @@
 
 @interface Note : BAAObject
 
-@property (nonatomic, copy) NSString *noteHeader;
+@property (nonatomic, copy) NSString *noteTitle;
 @property (nonatomic, copy) NSString *noteBody;
 @property (nonatomic, copy) NSString *noteDate;
 

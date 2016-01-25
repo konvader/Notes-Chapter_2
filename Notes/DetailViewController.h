@@ -11,7 +11,7 @@
 
 @interface DetailViewController : UIViewController
 
-@property (weak) IBOutlet UITextField *noteHeaderField;
+@property (weak) IBOutlet UITextField *noteTitleTextField;
 @property (weak) IBOutlet UITextView *noteBodyTextView;
 @property (weak) NSString *noteDate;
 

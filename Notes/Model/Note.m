@@ -13,7 +13,7 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super initWithDictionary:dictionary];
     if (self) {
-        _noteHeader = dictionary[@"noteHeader"];
+        _noteTitle = dictionary[@"noteTitle"];
         _noteBody = dictionary[@"noteBody"];
         _noteDate = dictionary[@"noteDate"];
     }

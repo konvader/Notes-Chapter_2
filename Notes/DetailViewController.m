@@ -33,7 +33,7 @@
 }
 
 - (void)configureView {
-    self.noteHeaderField.text = self.note.noteHeader;
+    self.noteTitleTextField.text = self.note.noteTitle;
     self.noteBodyTextView.text = self.note.noteBody;
     self.noteDate = self.note.noteDate;
 }
@@ -42,8 +42,8 @@
     [super viewDidLoad];
     //Do any additional setup after loading the view, typically from a nib.
     UIView *paddingView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 5.0f, 20.0f)];
-    self.noteHeaderField.leftView = paddingView;
-    self.noteHeaderField.leftViewMode = UITextFieldViewModeAlways;
+    self.noteTitleTextField.leftView = paddingView;
+    self.noteTitleTextField.leftViewMode = UITextFieldViewModeAlways;
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(backButtonAction:)];
     
@@ -54,7 +54,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self.noteHeaderField becomeFirstResponder];
+    [self.noteTitleTextField becomeFirstResponder];
 }
 
 - (void)backButtonAction:(id)sender {
@@ -62,7 +62,7 @@
 }
 
 - (void)saveNote:(id)sender {
-    self.note.noteHeader = self.noteHeaderField.text;
+    self.note.noteTitle = self.noteTitleTextField.text;
     self.note.noteBody = self.noteBodyTextView.text;
     
     [self.note saveObjectWithCompletion:^(id object, NSError *error) {

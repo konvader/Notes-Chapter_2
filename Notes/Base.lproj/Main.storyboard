@@ -87,7 +87,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZmN-km-1Xm">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZmN-km-1Xm" userLabel="Note Title Field">
                                 <rect key="frame" x="20" y="74" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -114,7 +114,7 @@
                     <navigationItem key="navigationItem" title="Note" id="Pfi-Al-QGs"/>
                     <connections>
                         <outlet property="noteBodyTextView" destination="e6q-Z1-LYP" id="hoX-dU-EeF"/>
-                        <outlet property="noteHeaderField" destination="ZmN-km-1Xm" id="u0F-Dg-fmu"/>
+                        <outlet property="noteTitleTextField" destination="ZmN-km-1Xm" id="d96-xE-8gi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
