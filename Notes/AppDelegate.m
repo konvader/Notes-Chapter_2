@@ -19,8 +19,8 @@
     // Override point for customization after application launch.
     [BaasBox setBaseURL:@"http://localhost:9000"
                 appCode:@"1234567890"];
-    NSLog(@"Base URL: %@", [BaasBox baseURL]);
-    NSLog(@"App Code: %@", [BaasBox appCode]);
+    NSLog(@"App Delegate - Base URL: %@", [BaasBox baseURL]);
+    NSLog(@"App Delegate - App Code: %@", [BaasBox appCode]);
     return YES;
 }
 

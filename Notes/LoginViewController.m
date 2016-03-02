@@ -52,7 +52,7 @@
 #pragma mark - Actions
 
 - (IBAction)loginAction {
-    NSLog(@"LoginViewController - Login action");
+    NSLog(@"Login View Controller - Login action");
     BAAClient *client = [BAAClient sharedClient];
     
     [client authenticateUser:self.loginUsernameField.text
@@ -60,16 +60,16 @@
                   completion:^(BOOL success, NSError *error) {
                       
                       if (success) {
-                          NSLog(@"LoginViewController - User authenticated: %@", client.currentUser);
+                          NSLog(@"Login View Controller - User authenticated: %@", client.currentUser);
                           [self dismissViewControllerAnimated:YES completion:nil];
                       } else {
-                          NSLog(@"LoginViewController - Error while logging in: %@", error);
+                          NSLog(@"Login View Controller - Error while logging in: %@", error);
                       }
                   }];
 }
 
 - (IBAction)signupAction {
-    NSLog(@"LoginViewController - Signup action");
+    NSLog(@"Login View Controller - Signup action");
     BAAClient *client = [BAAClient sharedClient];
     
     [client createUserWithUsername:self.signupUsernameField.text
@@ -77,10 +77,10 @@
                         completion:^(BOOL success, NSError *error) {
                             
                             if (success) {
-                                NSLog(@"LoginViewController - User created %@", client.currentUser);
+                                NSLog(@"Login View Controller - User created %@", client.currentUser);
                                 [self dismissViewControllerAnimated:YES completion:nil];
                             } else {
-                                NSLog(@"LoginViewController - Error in creating user: %@", error);
+                                NSLog(@"Login View Controller - Error in creating user: %@", error);
                             }
                         }];
 }
